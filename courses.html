@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/courses.css">
+    <!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+    </header>
+<div>
+<div id="background"></div>
+
+<br>
+
+    <!-- Modal HTML embedded directly into document -->
+<div id="ex1" class="modal">
+        <p>This is a GoMyCode Track.<br> 
+            Each track has its own goal.<br> 
+            By adopting this track, you chose your own goal.</p>
+        
+      </div>
+<div class="images">
+     <div class="pic1"><button class="a1"><p><a href="#ex1" rel="modal:open">View more</a></p></button> </div>
+     <div class="pic2"><button class="a2"><p><a href="#ex1" rel="modal:open">View more</a></p></button> </div>
+    <div class="pic3"><button class="a3"><p><a href="#ex1" rel="modal:open">View more</a></p></button> </div>
+</div>
+<div class="images">
+    <div class="pic4"><button class="a4"><p><a href="#ex1" rel="modal:open">View more</a></p></button>   </div>
+    <div class="pic5"><button class="a5"><p><a href="#ex1" rel="modal:open">View more</a></p></button>   </div>
+    <div class="pic6"><button class="a6"><p><a href="#ex1" rel="modal:open">View more</a></p></button>   </div>
+</div>
+<div class="images">
+    <div class="pic7"><button class="a7"><p><a href="#ex1" rel="modal:open">View more</a></p></button>   </div>
+    <div class="pic8"><button class="a8"><p><a href="#ex1" rel="modal:open">View more</a></p></button>  </div>    
+    <div class="pic9"><button class="a9"><p><a href="#ex1" rel="modal:open">View more</a></p></button>    </div>
+        
+</div>
+    <center>
+       <p> <h1>COURSES</h1></p><br>
+       <h3>Feedback</h3><br>
+       <button onclick="makeBold()">B</button>
+       <button onclick="makeitalic()">I</button>
+       <button onclick="underline()">Underline</button>
+       <select id="huhu" onchange="taille()">
+           <option value="20px">20px</option>
+           <option value="30px">30px</option>
+           <option value="40px">40px</option>
+         
+       </select>
+       <select id="typetext" onchange="types()" >
+            <option value="arial">arial</option>
+            <option value="verdana">verdana</option>
+            <option value="geneva">geneva</option>
+
+       </select>
+      <p><textarea id="textarea" cols="50" rows="10" ></textarea></p> 
+    </center>
+ </div>   
+</body>
+<script src="js/courses.js"></script>
+</html>
